@@ -31,6 +31,8 @@ app.get('/', function(request, response) {
     })
 })
 
+
+
 //새로운 유저가 접속했을 경우 다른 소켓에게도 알려줌
 io.sockets.on('connection', function(socket) {
     socket.on('newUser', function(name) {
@@ -68,3 +70,5 @@ io.sockets.on('connection', function(socket) {
 server.listen(8080, function() {
     console.log('서버 실행중..')
 })
+
+

@@ -18,6 +18,8 @@ socket.on('update', function(data) {
     console.log(`${data.name}: ${data.message}`)
 })
 
+
+
 //전송 함수
 function send() {
     //입력되어있는 데이터 가져오기
